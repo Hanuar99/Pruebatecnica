@@ -1,14 +1,12 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:get_it/get_it.dart';
 import 'package:internet_connection_checker/internet_connection_checker.dart';
-import 'package:prueba/core/local/shared_preference.dart';
 import 'package:prueba/core/network/network_info.dart';
 import 'package:prueba/domain/usecases/delete_user.dart';
 import 'package:prueba/domain/usecases/editar_user.dart';
 import 'package:prueba/domain/usecases/get_users.dart';
 import 'package:prueba/domain/usecases/register_user.dart';
 import 'package:prueba/presentation/bloc/users_bloc.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 
 import 'data/datasources/users_datasource_local.dart';
 import 'data/repositories/user_repositorie.dart';
@@ -46,12 +44,6 @@ Future<void> init() async {
 
   sl.registerLazySingleton<NetworkInfo>(
       () => NetworkInfoImpl(connectionChecker: sl()));
-  final sharedPreferences = await SharedPreferences.getInstance();
-
-  sl.registerLazySingleton(() => sharedPreferences);
-
-  sl.registerLazySingleton<PreferenceHelper>(
-      () => PreferenceHelper(sharedPreferences: sl()));
 
   sl.registerLazySingleton(() => FirebaseFirestore.instance);
 

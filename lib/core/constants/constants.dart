@@ -12,18 +12,13 @@ class AppColors {
   static const Color textSecondary = Colors.white;
 
   static const Color primaryColor = Colors.green;
-  static const Color secondaryColor = Color(0xFF9933FF);
 
   static const Color iconsPrimary = Color(0xFF13CACE);
-  static const Color iconsSecondary = Color(0xFF9933FF);
   static const Color iconLoading = Colors.greenAccent;
 
   static const Color error = Color(0xFFFF1744);
   static const Color background = Color(0xFFF4F6F8);
   static const Color white = Colors.white;
-  static const Color black = Colors.black;
-  static const Color grey = Colors.grey;
-  static const Color transparent = Colors.transparent;
   static const Color azul = Color(0xFF4F99FF);
   static const Color toastSuccess = Colors.green;
   static const Color toastWarning = Colors.yellow;

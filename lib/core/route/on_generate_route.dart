@@ -30,18 +30,6 @@ class OnGenerateRoute {
           }
         }
 
-      // case PageConst.commentPost:
-      //   {
-      //     if (args is List<dynamic>) {
-      //       return routeBuilder(CommentPage(
-      //         post: args[0],
-      //         cyclist: args[1],
-      //       ));
-      //     } else {
-      //       return routeBuilder(const NoPageFound());
-      //     }
-      //   }
-
       default:
         {
           return routeBuilder(const NoPageFound());

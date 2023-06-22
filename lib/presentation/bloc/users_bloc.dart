@@ -34,7 +34,6 @@ class UsersBloc extends Bloc<UsersEvent, UsersState> {
       final registerOrFailure = await registerUser(user: event.user);
       registerOrFailure.fold(
           (l) => {
-                print('error al registrar'),
                 emit(state.copyWith(
                     registerUserStatus: RegisterUserStatus.error,
                     errorMessage: l.message))

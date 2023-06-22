@@ -4,7 +4,6 @@ import 'package:prueba/data/models/user_model.dart';
 import '../../domain/entities/user.dart';
 
 abstract class UsersRemoteDataSourceContract {
-  // Future<List<DeviceModel>> getDeviceLocal();
   Future<bool> registerUser({required User user});
   Future<bool> editarUser({required User user});
   Future<List<UserModel>> getUsers();

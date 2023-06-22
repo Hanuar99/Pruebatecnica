@@ -11,21 +11,6 @@ class AppTextStyle with Diagnosticable {
     color: AppColors.textPrimary,
   );
 
-  static TextStyle? BlinkerBold(
-          {Color color = AppColors.textPrimary, double fontSize = 20.0}) =>
-      TextStyle(
-        fontSize: fontSize,
-        fontWeight: FontWeight.w700,
-        color: color,
-        height: 0.8,
-      );
-
-  static TextStyle? BlinkerBoldBlack({required double fontSize}) => TextStyle(
-        fontSize: fontSize,
-        fontWeight: FontWeight.w700,
-        color: AppColors.textPrimary,
-      );
-
   static TextStyle? labelTextFormField = TextStyle(
     fontSize: 16.sp,
     color: AppColors.textPrimary,

@@ -77,19 +77,12 @@ class _UsersPageState extends State<UsersPage> {
                         '${state.users![index].firstName} ${state.users![index].lastName}',
                         style: const TextStyle(fontWeight: FontWeight.bold),
                       ),
-                      // trailing: IconButton(
-                      //   icon: const Icon(Icons.delete),
-                      //   onPressed: () {
-                      //     showDeleteConfirmation(context);
-                      //   },
-                      // ),
                       onTap: () {
                         pushNamed(
                             context: context,
                             PageConst: PageConst.editUserPage,
                             arg: state.users![index]);
                       },
-                      // subtitle: Text(state.users![index].directions.first),
                     ),
                     const Divider()
                   ],

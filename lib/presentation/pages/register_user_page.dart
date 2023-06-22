@@ -167,7 +167,6 @@ class _RegisterUserPageState extends State<RegisterUserPage> {
 
                         BlocProvider.of<UsersBloc>(context)
                             .add(RegisterUserEvent(user: user));
-                        // Navigator.pop(context);
                       },
                       text: 'Guardar')),
             ],
