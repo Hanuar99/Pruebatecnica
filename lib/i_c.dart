@@ -8,7 +8,7 @@ import 'package:prueba/domain/usecases/get_users.dart';
 import 'package:prueba/domain/usecases/register_user.dart';
 import 'package:prueba/presentation/bloc/users_bloc.dart';
 
-import 'data/datasources/users_datasource_local.dart';
+import 'data/datasources/users_datasource_remote.dart';
 import 'data/repositories/user_repositorie.dart';
 import 'domain/contracts/users_contracts.dart';
 

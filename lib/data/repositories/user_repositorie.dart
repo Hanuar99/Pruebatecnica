@@ -1,7 +1,7 @@
 import 'package:dartz/dartz.dart';
 import 'package:prueba/core/error/exceptions.dart';
 import 'package:prueba/core/network/network_info.dart';
-import 'package:prueba/data/datasources/users_datasource_local.dart';
+import 'package:prueba/data/datasources/users_datasource_remote.dart';
 import 'package:prueba/domain/contracts/users_contracts.dart';
 import 'package:prueba/domain/entities/user.dart';
 
